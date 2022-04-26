@@ -24,8 +24,17 @@ export JAVA_HOME=jdk路径
 export PATH=$PATH:$JAVA_HOME/bin:.
 export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
 
-3.克隆此仓库并运行服务器
+3.克隆此仓库
 
 git clone https://github.com/66hh/Grasscutter-Termux.git
+
+4.下载资源和proto
+
+git clone https://github.com/Grasscutters/Grasscutter-Protos.git
+git clone https://github.com/66hh/Grasscutter-resources.git
+克隆上面的两个仓库并将里面的proto文件夹和resources文件夹复制到Grasscutter-Termux文件夹内
+
+5.运行服务器
+
 cd Grasscutter-Termux
 java -jar grasscutter.jar
